@@ -98,11 +98,10 @@ class Size
      *
      * @param  integer $width
      * @param  integer $height
-     * @param  integer $algorithm
      * @param  Closure $callback
      * @return Size
      */
-    public function resize($width, $height, $algorithm, Closure $callback = null)
+    public function resize($width, $height, Closure $callback = null)
     {
         if (is_null($width) && is_null($height)) {
             throw new \Intervention\Image\Exception\InvalidArgumentException(
